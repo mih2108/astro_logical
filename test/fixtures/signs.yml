@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  planet_info_1: MyString
+  cusp_info_2: MyString
+  horoscope: MyText
+
+two:
+  name: MyString
+  planet_info_1: MyString
+  cusp_info_2: MyString
+  horoscope: MyText
