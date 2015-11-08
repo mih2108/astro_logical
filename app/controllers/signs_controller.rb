@@ -5,13 +5,27 @@ class SignsController < ApplicationController
   	@signs = Sign.all
   end
 
+  def about
+  end
+
+  def contact
+  end
+
   def show
     begin
-      @sign= Sign.find(params[:id])
+      @sign= Sign.find_by_slug(params[:id])
+    
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json @sign}
+      end
+
     rescue
       redirect_to root_path, notice: "Unavailable"
     end
   end
+
+
   # def new
   # 	@painting = Painting.new
   # end
@@ -41,20 +55,6 @@ class SignsController < ApplicationController
   # 	@painting.destroy
   # 	redirect_to root_path
   # end
-  
-  # private
 
-  # def set_painting
-  # 	begin
-  # 		@painting = Painting.find(params[:id])
-  # 	rescue
-  # 		redirect_to root_path, notice: "I don't know what painting you are looking for."
-  # 	end
-  # end
-
-
-  # def painting_params
-  # 	params.require(:painting).permit(:title, :year, :medium, :artist_id, :museum_id, :image).merge(user_id: current_user.id)
-  # end
 
 end

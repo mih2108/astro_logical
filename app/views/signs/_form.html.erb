@@ -1,0 +1,22 @@
+	<h3>Leave Feedback</h3>
+<%= form_for @feedback do |f| %>
+	<% if @feedback.errors.any? %>
+		<div class="errors">
+			<%= @feedback.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>	
+		</div>
+	<% end %>
+
+	<p>
+		<h3>Leave Feedback</h3>
+	</p>
+
+	<p>
+		<%= f.radio_button_tag(:helpful, "Was this horoscope helpful to you?") %>
+		<%= f.label_tag(:helpful, "Helpful") %>
+		<%= f.label_tag(:helful, "Not Helpful") %>
+	</p>
+		</div>
+	<% end %>
+
+<% end %>
