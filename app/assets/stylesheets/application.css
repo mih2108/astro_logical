@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+	font-family: arial;
+	padding-top: 60px;
+} 
+input, textarea {
+	padding: .5em;
+	font-size: 1.25em;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .5em;
+	border-bottom: 1px solid #CCC;
+}
+
+.logo {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: .75em;
+	display: inline-block;
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+
+nav {
+	float: right;
+	margin-right: 2em;
+}
+
+nav li {
+	display: inline-block;
+}
+
+.sign_image {
+	border: 1px solid #CCC;
+	padding: .75em;
+	margin: .5em;
+	float: left;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px 10px;
+	box-shadow: 2px 1px #CCC;
+}
+
+.sign_image img {
+	width: 175px;
+}

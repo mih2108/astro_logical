@@ -1,10 +1,17 @@
 class SignsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :destroy]
-  before_action :set_sign, only: [:show, :edit, :update, :destroy]
+  #before_action :authenticate_user!, only: [:new, :create, :destroy]
+  #before_action :set_sign, only: [:show, :edit, :update, :destroy]
   def index
-  	@paintings = Sign.all
+  	@signs = Sign.all
   end
 
+  def show
+    begin
+      @sign= Sign.find(params[:id])
+    rescue
+      redirect_to root_path, notice: "Unavailable"
+    end
+  end
   # def new
   # 	@painting = Painting.new
   # end

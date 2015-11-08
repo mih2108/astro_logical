@@ -11,15 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151102005803) do
+ActiveRecord::Schema.define(version: 20151107232955) do
 
   create_table "signs", force: :cascade do |t|
     t.string   "name"
     t.string   "planet_info_1"
     t.string   "cusp_info_2"
-    t.text     "horoscope"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "image_1"
+    t.string   "image_2"
+    t.string   "birth_range"
+    t.string   "horoscope"
   end
 
   create_table "users", force: :cascade do |t|

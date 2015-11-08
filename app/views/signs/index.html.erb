@@ -1,1 +1,6 @@
 <h1>Astro-Logical</h1>
+<% @signs.each do |sign| %>
+<div class="sign_image">
+	<p><%= link_to (image_tag sign.image_1), sign_path(sign.id) %></p>
+</div>
+<% end %>
