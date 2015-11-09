@@ -1,4 +1,4 @@
-<h3>Leave Feedback</h3>
+
 <%= form_for @feedback do |f| %>
 	<% if @feedback.errors.any? %>
 		<div class="errors">
@@ -7,6 +7,8 @@
 		</div>
 		<% end %>
 	<% end %>
+<div class="view">
+	<h3>Leave Feedback</h3>
 <div class="form-group">
 	<p>Was this horoscope helpful to you?</p>
 	<p><%= radio_button_tag(:helpful, "helpful") %> 
@@ -57,5 +59,6 @@
 <div class-"form-group">
 <%= f.submit "leave feedback" %>
 
+</div>
 </div>
 <% end %>

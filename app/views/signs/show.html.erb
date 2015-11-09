@@ -1,4 +1,12 @@
-<h1><%= @sign.name %></h1>
-<p> <%= @sign.birth_range %></p>
-<p> <%= IO.binread(@sign.horoscope) %></p>
-<p><%= link_to "Leave Feedback", new_feedback_path(@feedback) %></p>
+<div class="row">
+	<div class="view">
+	<div class='col-md-6"'>
+		<h1><%= @sign.name %></h1>
+		<p> <%= @sign.birth_range %></p>
+		<p><%= Time.now.strftime("%m/%d/%Y") %></p>
+		<p> <%= IO.binread(@sign.horoscope) %></p>
+		<p><%= link_to "Leave Feedback", new_feedback_path(@feedback) %></p>
+	</div>
+	</div>
+</div>
+
