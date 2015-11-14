@@ -6,7 +6,7 @@
 #
 default: &default
   adapter: postgresql
-  enconding: unicode
+  encoding: unicode
 
 development:
   <<: *default
