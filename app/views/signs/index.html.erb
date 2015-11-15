@@ -6,7 +6,7 @@
 <% @signs.each do |sign| %>
 	     		<div class="col-mod-2">
 				     <!-- <div class="sign_image">  -->
-			        	<p><%= link_to "hiii #{image_tag('pisces_1.png'}".html_safe, sign_path(sign) %></p>
+			        	<p><%= link_to "hiii #{image_tag(asset_path('pisces_1.png'))}", sign_path(sign) %></p>
 			       	<!--  </div>	 -->
 			    </div>
 		
