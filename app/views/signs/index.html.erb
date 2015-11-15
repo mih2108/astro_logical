@@ -5,8 +5,8 @@
 <% end %>
 <% @signs.each do |sign| %>
 	     		<div class="col-mod-2">
-				     <div class="sign_image">
-			        	<p><%= link_to (<img id="logo-main" src="<%=asset_path('logo.png') %>" width="200" alt="Astro-Logical">), sign_path(sign) %></p>
+				     <div class="sign_image"> 
+			        	<p><%= link_to (image_tag sign.image_1), sign_path(sign) %></p>
 			       	 </div>	
 			    </div>
 		
