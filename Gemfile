@@ -7,6 +7,7 @@ gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 group :production do
 	gem 'pg'
+	gem 'rails_12factor'
 end
 
 
@@ -53,4 +54,4 @@ group :development do
   gem 'spring'
 end
 
-gem 'rails_12factor', group: :production
+ruby "4.24"
