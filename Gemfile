@@ -54,4 +54,4 @@ group :development do
   gem 'spring'
 end
 
-ruby "4.24"
+ruby "4.2.4"
